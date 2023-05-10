@@ -1,0 +1,24 @@
+NAME = ft_display_file
+
+GCC = gcc -Wall -Wextra -Werror
+
+SRCS = main.c error_handler.c
+OBJS = $(SRCS:.c=.o)
+
+%.o : %.c
+	$(GCC) -c $< -o $@
+
+$(NAME) : $(OBJS)
+	$(GCC) -o $(NAME) $(OBJS)
+
+.PHONY: all clean fclean re
+
+all : $(NAME)
+
+clean :
+	rm -f $(OBJS)
+
+fclean : clean
+	rm -f $(NAME)
+
+re : fclean all

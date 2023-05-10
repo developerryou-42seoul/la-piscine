@@ -1,0 +1,5 @@
+Credentials cache: API:EF613452-E735-4544-9FB2-BA6B2D43FC0B
+        Principal: sryou@42SEOUL.KR
+
+  Issued                Expires               Principal
+Feb  1 11:54:27 2022  Feb  1 21:54:24 2022  krbtgt/42SEOUL.KR@42SEOUL.KR
